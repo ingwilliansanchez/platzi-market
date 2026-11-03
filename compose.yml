@@ -1,0 +1,21 @@
+services:
+  angular_dev:
+    build:
+      context: .
+      target: enviroment_dev
+    tty: true
+    stdin_open: true
+    command: /bin/sh
+    volumes:
+      - .:/usr/src/app
+  server_dev:
+    build:
+      context: .
+      target: server_dev
+    depends_on:
+      - angular_dev
+    ports:
+    - 4200:4200
+    volumes:
+      - .:/usr/src/app
+    
