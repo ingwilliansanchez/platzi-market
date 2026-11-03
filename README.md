@@ -12,6 +12,18 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## Development with VS Code Dev Containers
+
+Open the project in VS Code and select **Dev Containers: Reopen in Container** from the Command Palette. The Dev Container uses the `angular_dev` service from `compose.yml`; `npm ci` installs the project dependencies after the container is created, and port `4200` is forwarded to the host.
+
+Start the Angular development server in the container terminal with:
+
+```bash
+npm start
+```
+
+Then open `http://localhost:4200/` in your browser.
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
