@@ -1,7 +1,10 @@
-<div>
+<!--<div>
     <p><input type="text" placeholder="Ingrese la URL de la imagen" [(ngModel)]="imgParent" /></p>
 </div>
 
-<app-img (loaded)="onLoaded($event)" [img]="imgParent"></app-img>
+<app-img (loaded)="onLoaded($event)" [img]="imgParent"></app-img>-->
+@for (product of products; track product.id) {
+    <app-product [product]="product"></app-product>
+}
 
 <router-outlet />
