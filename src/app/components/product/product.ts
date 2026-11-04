@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { Product as ProductModel } from '../../models/product';
+import { Img } from '../img/img';
 
 @Component({
-  imports: [],
+  imports: [Img],
   selector: 'app-product',
   styleUrl: './product.scss',
   templateUrl: './product.html',

@@ -1,12 +1,6 @@
-<h3>Counter: {{ counter }}</h3>
-<button (click)="toggleCounter()">Destroy component</button>
-<p>{{showImg}}</p>
-@if (showImg) {
-    <p>Estoy mostrando la imagen</p>
     @if (img){
-    <img width="200" (load)="imgLoaded()" (error)="imgError()" [src]="img" alt="Imagen"/>
+    <img (load)="imgLoaded()" (error)="imgError()" [src]="img" alt="Imagen"/>
     }
     @else {
       <img width="200" [src]="imageDefault" alt="Imagen por defecto"/>
     }
-}
