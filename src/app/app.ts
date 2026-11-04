@@ -3,8 +3,9 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { Img } from './components/img/img';
 import { Products } from './components/products/products';
+import { Nav } from './components/nav/nav';
 @Component({
-  imports: [RouterOutlet, Img, FormsModule, Products],
+  imports: [RouterOutlet, Img, FormsModule, Products, Nav],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
