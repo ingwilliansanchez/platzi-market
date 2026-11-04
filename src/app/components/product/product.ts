@@ -16,4 +16,8 @@ export class Product {
     image: ''
   }
 
+  constructor() {
+    console.log('product component created', this.product);
+  }
+
 }
