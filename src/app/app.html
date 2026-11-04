@@ -1,4 +1,7 @@
-<p><input type="text" placeholder="Ingrese su nombre" [(ngModel)]="imgParent" /></p>
-<app-img [img]="imgParent"></app-img>
+<div>
+    <p><input type="text" placeholder="Ingrese la URL de la imagen" [(ngModel)]="imgParent" /></p>
+</div>
+
+<app-img (loaded)="onLoaded($event)" [img]="imgParent"></app-img>
 
 <router-outlet />

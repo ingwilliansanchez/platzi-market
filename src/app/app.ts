@@ -12,4 +12,8 @@ import { Img } from './components/img/img';
 export class App {
   protected readonly title = signal('platzi-market');
   imgParent: string = '';
+
+  onLoaded(img: string) {
+    console.log('Imagen cargada correctamente desde el componente padre', img);
+  }
 }

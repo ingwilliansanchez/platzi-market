@@ -1,7 +1,6 @@
-<h1>{{img}}</h1>
 @if (img){
-    <img [src]="img" alt="Imagen"/>
+    <img width="200" (load)="imgLoaded()" (error)="imgError()" [src]="img" alt="Imagen"/>
 }
 @else {
-  <p>Imagen no disponible</p>
+  <img width="200" [src]="imageDefault" alt="Imagen por defecto"/>
 }
