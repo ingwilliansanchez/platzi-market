@@ -5,7 +5,6 @@
   "workspaceFolder": "/usr/src/app",
   "overrideCommand": true,
   "shutdownAction": "stopCompose",
-  "forwardPorts": [4200],
   "postCreateCommand": "npm ci",
   "customizations": {
     "vscode": {
