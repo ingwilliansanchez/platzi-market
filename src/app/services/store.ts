@@ -1,7 +1,7 @@
-import { Service } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Product as ProductModel } from '../models/product';
 
-@Service()
+@Injectable({ providedIn: 'root' })
 export class Store {
 
     private myShoppingCart: ProductModel[] = [];
