@@ -1,0 +1,14 @@
+{
+  "name": "Platzi Market - Angular",
+  "dockerComposeFile": "../compose.yml",
+  "service": "angular_dev",
+  "workspaceFolder": "/usr/src/app",
+  "overrideCommand": true,
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "npm ci",
+  "customizations": {
+    "vscode": {
+      "extensions": ["angular.ng-template"]
+    }
+  }
+}
