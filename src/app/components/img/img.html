@@ -1,0 +1,6 @@
+    @if (img){
+    <img (load)="imgLoaded()" (error)="imgError()" [src]="img" alt="Imagen"/>
+    }
+    @else {
+      <img width="200" [src]="imageDefault" alt="Imagen por defecto"/>
+    }

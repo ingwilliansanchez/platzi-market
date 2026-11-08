@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(./style/reset.scss);
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+* {
+    font-family: 'Sansation', sans-serif;
+}
+.products--grid {
+    app-img {
+        img {
+            border-radius: 10px;
+            margin-top: 1em;
+        }
+    }
+}
