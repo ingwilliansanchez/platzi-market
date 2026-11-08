@@ -3,9 +3,11 @@ import { Product as ProductModel } from '../../models/product';
 import { Product } from '../product/product';
 import { Store } from '../../services/store';
 import { Products as ProductsService } from '../../services/products';
+import { DatePipe, UpperCasePipe, CurrencyPipe } from '@angular/common';
+import { TimeAgoPipe } from '../../pipes/time-ago-pipe';
 
 @Component({
-  imports: [Product],
+  imports: [Product, DatePipe, UpperCasePipe, TimeAgoPipe, CurrencyPipe],
   selector: 'app-products',
   styleUrl: './products.scss',
   templateUrl: './products.html',
@@ -14,6 +16,10 @@ export class Products implements OnInit{
 
     myShoppingCart: ProductModel[] = [];
     total: number = 0;
+
+    //pIPE
+    today = new Date();
+    date = new Date(2026, 5, 1);
 
   products:ProductModel[] = [];
   //Dependency Injection

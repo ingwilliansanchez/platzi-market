@@ -5,7 +5,7 @@ import { Img } from './components/img/img';
 import { Products } from './components/products/products';
 import { Nav } from './components/nav/nav';
 @Component({
-  imports: [RouterOutlet, Img, FormsModule, Products, Nav],
+  imports: [RouterOutlet, FormsModule, Products, Nav],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',

@@ -1,7 +1,11 @@
 <p> La cantidad de Productos en el carrito es: {{ myShoppingCart.length }} </p>
-<p> El total de la compra es: {{ total }} USD </p>
+<p> El total de la compra es: {{ total  | currency }} </p>
+<p>Today: {{ today | date: 'short' }}</p>
+<p>Date: {{ date | timeAgo }}</p>
+<p>{{'hoLa' | uppercase}}</p>
 <div class="products--grid">
     @for (product of products; track product.id) {
     <app-product [product]="product" (addedProduct)="onAddTotShoppingCart($event)"></app-product>
+
 }
 </div>
