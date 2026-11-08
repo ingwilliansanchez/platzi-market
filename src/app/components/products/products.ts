@@ -29,6 +29,7 @@ export class Products implements OnInit{
   onAddTotShoppingCart(product:ProductModel){
     // Add to my ShoopingCart Products
     this.storeService.addProduct(product);
+    this.myShoppingCart = this.storeService.getShoppingCart();
     // Update the total amount of the products in the shooping cart
     this.total = this.storeService.getTotal();
     console.log('myShoppingCart', this.myShoppingCart);

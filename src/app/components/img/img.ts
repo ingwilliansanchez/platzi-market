@@ -7,13 +7,13 @@ import { Component, Input, Output, EventEmitter, OnChanges, OnInit, AfterViewIni
   templateUrl: './img.html'
 })
 export class Img implements OnChanges, OnInit, AfterViewInit, OnDestroy {
-  @Input() img: string = '';
+  @Input() img = '';
   @Output() loaded = new EventEmitter<string>();
 
-  imageDefault: string = 'https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg';
+  imageDefault = 'https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg';
   counter = 0;
   counterFn: number | undefined;
-  showImg: boolean = true;
+  showImg = true;
 
   constructor() {
     console.log('img component created -> constructor', this.img);
